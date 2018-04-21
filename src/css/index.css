@@ -1,0 +1,73 @@
+body{
+  background-color: #f2f2f2;
+}
+
+.moviePoster{
+  box-shadow: 0px 0px 3px 2px darkgrey;
+  height: 150px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.imgWrapper{
+  display: flex;
+  justify-content: center;
+  width:50%;
+}
+
+.mainContainer{
+  padding-top: 10px;
+}
+
+.modalContainer{
+  color: white;
+  z-index: 2;
+}
+
+.modalRow * {
+  z-index: 2;
+}
+
+.modalRow{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+
+.modalRow > p {
+  padding-left: 5px;
+}
+
+
+.modalNavigation * {
+  color: white;
+  z-index: 2;
+}
+
+.modalNavigation{
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 2;
+}
+
+.modalPoster{
+  height: 150px;
+}
+
+.backgroundImage{
+  overflow: auto;
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100%;
+  filter: blur(5px);
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+  background-position: center center;
+  z-index: 1;
+
+}
